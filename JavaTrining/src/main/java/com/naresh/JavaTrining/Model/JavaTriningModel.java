@@ -12,6 +12,9 @@ public class JavaTriningModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
+	
+	@Column
+	private long bid;
 	@Column(name = "studentName")
 	private String studentName;
 	@Column(name = "studentCource")
@@ -46,6 +49,16 @@ public class JavaTriningModel {
 	private String trinerSubject;
 	@Column(name = "trinerFee")
 	private String trinerFee;
+	
+	
+	
+	
+	public long getBid() {
+		return bid;
+	}
+	public void setBid(long bid) {
+		this.bid = bid;
+	}
 	public long getId() {
 		return id;
 	}

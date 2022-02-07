@@ -7,8 +7,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.naresh.JavaTrining.Dao.JavaTriningRepository;
 import com.naresh.JavaTrining.Model.JavaTriningModel;
 import com.naresh.JavaTrining.Service.*;
 
@@ -45,11 +48,18 @@ public class JavaTriningContoller {
 		
 		return "update_student";
     }
+    
+    
     @GetMapping("/studentDeleteById/{id}")
     public String deleteStudent(@PathVariable(value = "id") long id) {
     	
     	this.javaTriningService.deleteStudentById(id);
     	return "redirect:/";
     }
+	/*
+	 * @PutMapping("/StudentUpdate") public JavaTriningModel
+	 * update(@ModelAttribute("javaTriningModel") JavaTriningModel javaTriningModel)
+	 * { return javaTriningService.saveStudent(javaTriningModel); }
+	 */
 
 }

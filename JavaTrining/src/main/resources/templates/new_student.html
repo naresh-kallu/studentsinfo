@@ -15,6 +15,9 @@
 		<hr>
 		<h2>Save Student</h2>
 		<form action="#" th:action="@{/saveStudent}" th:object="${javaTriningModel}" method="POST">
+		   <input type="text" th:field="*{bid}"  placeholder="Bid"
+				class="form-control mb-4 col-4" />
+		
 			<input type="text" th:field="*{studentName}"  placeholder="Student Name"
 				class="form-control mb-4 col-4" />
 

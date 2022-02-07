@@ -5,5 +5,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface JavaTriningRepository extends JpaRepository<JavaTriningModel, Long> {
+	
+	
+	
 
 }

@@ -13,6 +13,7 @@
 		<hr>
 		<h2>Update Student</h2>
 		<form action="#" th:action="@{/saveStudent}" th:object="${javaTriningModel}" method="POST">
+		   <input type="text" th:field="*{bid}" class="form-control mb-4 col-4" />
 			<input type="text" th:field="*{studentName}" class="form-control mb-4 col-4" />
 			<input type="text" th:field="*{studentCource}" class="form-control mb-4 col-4" />
 			<input type="text" th:field="*{studentRollNo}"  class="form-control mb-4 col-4" />

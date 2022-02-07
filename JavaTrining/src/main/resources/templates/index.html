@@ -57,6 +57,7 @@
 <thead>
 
 <tr>
+<th>Bid</th>
 <th>Student Name</th>
 <th>Cource</th>
 <th>RollNo</th>
@@ -71,6 +72,7 @@
 </thead>
 <tbody>
 				<tr th:each="javaTriningModel : ${ListStudents}">
+				    <td th:text="${javaTriningModel.bid}"></td>
 					<td th:text="${javaTriningModel.studentName}"></td>
 					<td th:text="${javaTriningModel.studentCource}"></td>
 					<td th:text="${javaTriningModel.studentRollNo}"></td>
