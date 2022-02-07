@@ -40,6 +40,11 @@ public class JavaTriningServiceImpl implements JavaTriningService {
 		this.javaTriningRepository.deleteById(id);
 		
 	}
+	@Override
+	public void deleteById() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }

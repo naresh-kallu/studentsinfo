@@ -9,4 +9,5 @@ public interface JavaTriningService {
 	void saveStudent(JavaTriningModel javaTriningModel);
 	JavaTriningModel getStudentById(long id);
     void deleteStudentById(long id);
+    void deleteById();
 }
