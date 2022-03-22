@@ -1,0 +1,12 @@
+Step 1 - When the client (browser) sends an HTTP request to a specific URL. The DispatcherServlet of Spring MVC receives the request.
+Step 2 - DispatcherServlet consult to HandlerMapper to identify which controller is responsible to handle the HTTP request.
+Step 3 - HandlerMapper selects the controller which is mapped to the incoming request URL and returns the (selected Handler) and Controller details to DispatcherServlet.
+Step 4 - Now DispatcherServlet knows which controller is responsible to 
+process the request so DispatcherServlet will forward that request to the corresponding controller to process the request.
+Step 5 - Now the Controller process the request, validates the request, and creates a model with data. Finally, the Controller returns the logical name of view and model to the DispatcherServlet.
+Step 6 - DispatcherServlet consult ViewResolver to resolve a logical view with the physical view that exists in the application.
+Step 7 - ViewResolver responsible to map logical vie
+Step 7 - ViewResolver responsible to map logical view with actual view and return the actual view details back to the DispatcherServlet.
+Step 8 - Now DispatcherServlet sends the view and model to the View component.
+Step 9 - The View component merge view and model and forms a plain HTML output. Finally, the View component sends HTML output back to the DispatcherServlet.
+Step 10 - The DispatcherServlet finally sends HTML output as a response back to the browser for rendering.
